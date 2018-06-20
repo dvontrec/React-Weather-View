@@ -28,7 +28,7 @@ export default class SearchBar extends Component
 		//prevents default form event from running
 		event.preventDefault();
 		//fetches weather data for the selected city
-		console.log(process.env.Test)
+		console.log(process.env.API_KEY);
 	}
 
 	render()
