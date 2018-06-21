@@ -1,8 +1,9 @@
 import axios from 'axios';
+import { getKey } from '../secret'
 
-const API_KEY = import getKey from "../secret"
+const API_KEY = getKey();
 //saves the root URL with the API key
-const Root_URL = `http://samples.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
+const Root_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
 export const FETCH_WEATHER = 'FETCH_WEATHER'
 
 //creates a fetchWeather action
